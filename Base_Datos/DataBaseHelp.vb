@@ -27,7 +27,7 @@ Public Class DataBaseHelp
             Return "Error al crear el empleado: " & ex.Message
         End Try
     End Function
-    Public Function DeletePtoveedor(id As Integer) As String
+    Public Function DeleteProveedor(id As Integer) As String
 
         Try
             Dim query As String = "DELETE FROM Proveedor WHERE ProveedorId = @Id"

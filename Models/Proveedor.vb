@@ -10,7 +10,12 @@
         Me.Contacto = contacto
         Me.Telefono = telefono
     End Sub
-
+    Public Sub New()
+        _ProveedorID = 0
+        _NombreEmpresa = String.Empty
+        _Contacto = String.Empty
+        _Telefono = String.Empty
+    End Sub
     Public Property ProveedorID As Integer
         Get
             Return _ProveedorID
