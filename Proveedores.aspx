@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Proveedores.aspx.vb" Inherits="Examen.Proveedores" %>
+﻿<%@ Page Title="Proveedores" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Proveedores.aspx.vb" Inherits="Examen.Proveedores" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -45,8 +45,7 @@
         </Columns>
     </asp:GridView>
 
-    <asp:SqlDataSource ID="SqlDataSourceProveedores" runat="server"
-        ConnectionString="<%$ ConnectionStrings:conexionDB %>"
+    <asp:SqlDataSource ID="SqlDataSourceProveedores" runat="server" ConnectionString="<%$ ConnectionStrings:conexionDB %>"
         SelectCommand="SELECT * FROM [Proveedor]">
     </asp:SqlDataSource>
 

@@ -24,7 +24,6 @@
             _ProveedorID = value
         End Set
     End Property
-
     Public Property NombreEmpresa As String
         Get
             Return _NombreEmpresa
@@ -33,7 +32,6 @@
             _NombreEmpresa = value
         End Set
     End Property
-
     Public Property Contacto As String
         Get
             Return _Contacto
@@ -42,7 +40,6 @@
             _Contacto = value
         End Set
     End Property
-
     Public Property Telefono As String
         Get
             Return _Telefono
