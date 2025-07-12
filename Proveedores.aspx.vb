@@ -17,7 +17,6 @@ Public Class Proveedores
             Dim resultado As String = dbHelper.CreateProveedor(proveedor)
             LblMensaje.Text = resultado
             LimpiarFormulario()
-            GvProveedores.DataSource = dbHelper.CreateProveedor(proveedor)
             GvProveedores.DataBind()
         Else
             ' ACTUALIZAR
@@ -30,7 +29,6 @@ Public Class Proveedores
             LblMensaje.Text = resultado
             LimpiarFormulario()
             IdProveedor.Value = ""
-            GvProveedores.DataSource = dbHelper.UpdateProveedor(IdProveedor.Value, proveedor)
             GvProveedores.DataBind()
         End If
     End Sub
