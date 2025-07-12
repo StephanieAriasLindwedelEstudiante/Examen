@@ -5,10 +5,9 @@ Public Class DataBaseHelp
         Try
             Dim fechaDate As Date = Date.Now
 
-            Dim query As String = "INSERT INTO Proveedor (ProveedorId, NombreEmpresa, Contacto, Telefono) 
-            VALUES (@ProveedorId, @NombreEmpresa, @Contacto, @Telefono)"
+            Dim query As String = "INSERT INTO Proveedor ( NombreEmpresa, Contacto, Telefono) 
+            VALUES ( @NombreEmpresa, @Contacto, @Telefono)"
             Dim parameters As New List(Of SqlParameter) From {
-                New SqlParameter("@ProveedorId", proveedor.ProveedorID),
                 New SqlParameter("@NombreEmpresa", proveedor.NombreEmpresa),
                 New SqlParameter("@Contacto", proveedor.Contacto),
                 New SqlParameter("@Telefono", proveedor.Telefono)
